@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Wilder</title>
+  </head>
+  <body>
+    <script src="hello-wilder.js"></script>
+  </body>
+</html>
+-------------------------------------------------
+// Define some variables
+const myFavoriteMovie = 'Gladiator';
+const Year = '2000'
+const NameDirector = 'Ridley Scott'
+const message = 'Hello !' + myFavoriteMovie + ' is my favorite movie released in ' + Year + ' by ' + NameDirector;
+
+// Display a popup
+alert(message);
