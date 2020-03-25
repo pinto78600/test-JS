@@ -3,10 +3,14 @@ process.stdin.setEncoding('utf8')
 
 console.log('How old are you ? ')
 process.stdin.on('data', (age) => {
-  let dateDeNaissance = anneeActuelle - age
+  const anneeActuelle = 2020
   if (age >= 1 && age <= 99) {
-    const anneeActuelle = 2020
-    console.log(dateDeNaissance)
-  })
+    let dateDeNaissance = anneeActuelle - age
+    console.log("You were born in " + dateDeNaissance)
+    process.exit()
+  }
+  else{
+    console.log('Input error')
+  }
+  
 })
-process.exit(exitCode)
