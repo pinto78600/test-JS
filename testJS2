@@ -1,0 +1,19 @@
+class Person{
+  constructor(name,age){
+    this._name = name ;
+    this._age =  age;
+  }
+ 
+  tellMyName(){
+    return `I am ${this._name}` ;
+  }
+  tellMyAge (){
+    return `i am ${this._age} years old ` ;
+  
+  }
+
+} 
+const john = new Person ('John',40);
+const mary = new Person ('Mary',35);
+console.log(john.tellMyName(),john.tellMyAge())
+console.log(mary.tellMyName(),mary.tellMyAge())
